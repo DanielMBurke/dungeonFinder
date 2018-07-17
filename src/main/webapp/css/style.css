@@ -1,0 +1,53 @@
+.bookCover {
+	
+}
+
+.submitReview {
+	
+}
+
+.submitReview>button {
+		font:  1rem Arial Black, Gadget, sans-serif;
+	
+}
+
+.currentReviews {
+	font: bold 2rem Georgia, serif;
+}
+.reviewSet{
+	border: solid;
+	padding:1px;
+}
+
+.reviewSet > div:nth-child(odd){
+	background-color:lightgrey;
+	border: 2px outset grey;
+	margin: .5rem;
+		padding:.5rem;
+	
+	
+}
+.reviewSet > div:nth-child(even){
+	border: 2px outset grey;
+	margin: .5rem;
+		padding:.5rem;
+	
+}
+
+.reviewInfo{
+	
+}
+
+.title {
+	font: bold 1rem Georgia, serif;
+}
+
+.starImg>img {
+	width: 25%;
+	padding:.5rem;
+	opacity:.75;
+background: linear-gradient(to right, #c40101 0%,#c98484 17%,#ad5151 33%,#008a00 67%,#005700 83%,#002400 100%);}
+
+.comments {
+	font: bold 1rem Georgia, serif;
+}
