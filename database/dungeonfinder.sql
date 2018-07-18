@@ -1,6 +1,9 @@
 DROP TABLE IF EXISTS "person";
 DROP TABLE IF EXISTS "person_attributes";
 DROP TABLE IF EXISTS "attributes";
+DROP SEQUENCE IF EXISTS "seq_person_id";
+DROP SEQUENCE IF EXISTS "seq_attribute_id";
+
 
 CREATE SEQUENCE seq_person_id;
 
@@ -14,8 +17,7 @@ gender varchar(1) DEFAULT 'M' NOT NULL,
 join_date date NOT NULL,
 CONSTRAINT pk_person_person_id PRIMARY KEY (person_id),
 CONSTRAINT ck_gender CHECK (gender IN ('M','F'))
-);
-UNIQUE (username, email));
+); UNIQUE(username, email));
 
 
 CREATE TABLE public."person_attributes"
@@ -41,5 +43,5 @@ ALTER TABLE person_attributes ADD FOREIGN KEY (attribute_id) REFERENCES attribut
 ALTER TABLE person_attributes ADD FOREIGN KEY (person_id) REFERENCES person(person_id);
 
 
-INSERT INTO "person"(username, first_name, last_name) VALUES ('RufusMcdoogan','Daniel','Burke');
+INSERT INTO "person"(username, first_name, last_name,join_date) VALUES ('RufusMcdoogan','Daniel','Burke','2018-07-17');
 INSERT INTO "attributes"(attribute_id,attribute1,attribute2,attribute3,attribute4,attribute5) VALUES (1,'futuristic','achiever','strategic','significance','positivity');

@@ -1,53 +1,26 @@
-.bookCover {
+*{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+h1, h2{font:bold 70px  'Yatra One', cursive;
+text-align:center;
+background-image: url(https://thumbs.gfycat.com/WatchfulObeseBarasingha-size_restricted.gif);
+ -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 	
 }
 
-.submitReview {
+.headerImage{
 	
-}
 
-.submitReview>button {
-		font:  1rem Arial Black, Gadget, sans-serif;
-	
-}
-
-.currentReviews {
-	font: bold 2rem Georgia, serif;
-}
-.reviewSet{
-	border: solid;
-	padding:1px;
-}
-
-.reviewSet > div:nth-child(odd){
-	background-color:lightgrey;
-	border: 2px outset grey;
-	margin: .5rem;
-		padding:.5rem;
+	}
 	
 	
-}
-.reviewSet > div:nth-child(even){
-	border: 2px outset grey;
-	margin: .5rem;
-		padding:.5rem;
+.homecontainer{
+   background-image: url(http://www.news-world.us/wp-content/uploads/2015/02/Stone-and-wall-backgrounds-3.jpg);
 	
-}
-
-.reviewInfo{
 	
-}
-
-.title {
-	font: bold 1rem Georgia, serif;
-}
-
-.starImg>img {
-	width: 25%;
-	padding:.5rem;
-	opacity:.75;
-background: linear-gradient(to right, #c40101 0%,#c98484 17%,#ad5151 33%,#008a00 67%,#005700 83%,#002400 100%);}
-
-.comments {
-	font: bold 1rem Georgia, serif;
 }
