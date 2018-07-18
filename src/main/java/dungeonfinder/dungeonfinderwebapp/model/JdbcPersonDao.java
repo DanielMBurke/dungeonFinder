@@ -39,7 +39,7 @@ import org.springframework.stereotype.Component;
 //			person.setFirstName(results.getString("first_name"));
 //			person.setLastName(results.getString("last_name"));
 //			person.seteMail(results.getString("email"));
-			person.setAlignment(results.getString())
+//			person.setAlignment(results.getString())
 //			person.setDateSubmitted(results.getTimestamp("date").toLocalDateTime());
 //			allPersons.add(person);
 //		}

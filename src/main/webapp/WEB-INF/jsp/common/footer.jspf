@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-
+</body>
 <footer>
 	<c:url var="align" value="/img/footereyes.gif"/>
 		<img class="headerImage" src="${align}"/>        </footer>	

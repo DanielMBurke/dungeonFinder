@@ -62,19 +62,26 @@ public class Person {
 	public String getAlignment(int good, int lawful) {
 		if (good == 5 && lawful == 5) {
 			return "Lawful Good";
+			
+		} else if (good == 4 && lawful == 4) {
+			return "Lawful Neutral";	
+			
 		} else if (good == 5 && lawful == 5) {
-			return "Lawful Neutral";
-		} else if (good == 5 && lawful == 5) {
-			return "Lawful Chaotic";
+			return "Lawful Evil";
+			
 		}else if (good == 5 && lawful== 5) {
 			return"Neutral Good";
+			
 		} else if (good == 5 && lawful == 5) {
-			return "Neutral Chaotic";
-		}else if (good == 5 && lawful== -5) {
-			return"Lawful Evil ";
-		} else if (good == 5 && lawful == -5) {
 			return "Neutral Evil";
-		} else if (good == -5 && lawful == -5) {
+			
+		}else if (good == 5 && lawful== -5) {
+			return"Chaotic Good";
+			
+		} else if (good == 5 && lawful == -5) {
+			return "Chaotic Neutral";
+			
+		} else if (good >= -4 && lawful >= -4) {
 			return "Chaotic Evil";
 		}
 	return "True Neutral";
