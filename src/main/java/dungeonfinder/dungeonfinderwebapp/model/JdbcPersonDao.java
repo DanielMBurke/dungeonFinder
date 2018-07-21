@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 //@Component
 //public class JdbcPersonDao implements PersonDao{
-//
+//  @Componenet
 //	private JdbcTemplate jdbcTemplate;
 //
 //	@Autowired

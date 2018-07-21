@@ -1,8 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@include file="common/header.jspf"%>
 	<body>
-	<c:url var="formAction" value="/inputReview" />
-<form method="POST" action="${formAction}">
+	<c:url var="formAction" value="/result" />
+<form method="GET" action="${formAction}">
 		<div class="formInputGroup">
 <label for="attribute">Attributes:</label> 	
 <select name="attribute">

@@ -11,18 +11,23 @@ background-image: url(https://thumbs.gfycat.com/WatchfulObeseBarasingha-size_res
   -webkit-text-fill-color: transparent;	
 }
 
-.signUp{
-	
+.signUp > button{
 }
 
 .headerImage{
-	
-
-	}
+}
 	
 	
 .homecontainer{
    background-image: url(http://www.news-world.us/wp-content/uploads/2015/02/Stone-and-wall-backgrounds-3.jpg);
-	
-	
+/* 	https://i.imgur.com/EDbAEjM.gif
+ */	
+}
+.alignmentResult{
+font:bold 70px  'Yatra One', cursive;
+text-align:center;
+background-image: url(https://thumbs.gfycat.com/WatchfulObeseBarasingha-size_restricted.gif);
+ -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }

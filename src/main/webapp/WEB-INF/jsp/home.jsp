@@ -5,18 +5,16 @@
 	
 	<h2>Dungeon-Finder 1.0</h2>
 <div class="signUp">
-		<button><a class="warning" href="signup">Click here to begin!</a></button>
+		<button><a class="signup" href="signup">Click here to begin!</a></button>
 	</div>
-	<div class="recentEntrs">Current Participants:</div>
-	<div class= "reviewSet">
+	<strong><div class="recentEntries">Current Participants:</div></strong>
+	<div class= "resultSet">
 	<c:forEach var="persons" items="${person}">
 		<div class="recentResultsContainer">
-		<span class=></span>
 		<c:out value="Submitted on: ${person.dateSubmitted}" />
 		<div>
 			<c:out value="By ${person.username}" />
 		</div>
 	</c:forEach>
-	
 	
 <%@include file="common/footer.jspf"%>
