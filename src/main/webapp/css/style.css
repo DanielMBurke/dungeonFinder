@@ -63,31 +63,37 @@ h2 {
 
 /* SIGN-UP PAGE */
 .formInputGroup {
-	display: grid;
-	grid-template-columns: repeat(4 1fr);
-	grid-template-rows: repeat(9 1fr);
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#strengthsJar{
+	display:grid;
+	 grid-template-columns: 1fr 1fr 1fr 1fr;
+	 background-image: url("wood.jpg");
+	
+	}
+
+#strengthsJar > div	{
+		background-color:dimgrey;
+		font:  18px 'Yatra One', cursive;
+	
+}
+.columnJar1{
+	color:#8a0105;
 }
 
-#strategicThinking {
-	baackground-color: red;
-	grid-column: 1;
-	grid-row: 1/9
+.columnJar2{
+		color:purple;
+	
 }
-
-#executing {
-	baackground-color: darkpurple;
-	grid-column: 2;
-	grid-row: 1/9
+.columnJar3{
+		color:#00008a;
+	
 }
-
-#relationshipB {
-	grid-column: 3;
-	grid-row: 1/9
-}
-
-#influencing {
-	grid-column: 4;
-	grid-row: 1/9
+.columnJar4{
+		color:orange;
+	
 }
 
 /* RESULTS PAGE

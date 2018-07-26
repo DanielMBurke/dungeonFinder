@@ -16,137 +16,140 @@
 		<label for="username">Username:(Required)</label> <input type="text"
 			name="username" id="username" />
 	</div>
-	Gender:
 	<div class="formInputGroup">
-		<div class="radio-inline" for="usertype"> <input
-			type="radio" name="gender" id="genderM" value="m"> Male
-		</div> <div class="radio-inline"> <input type="radio"
-			name="gender" id="genderF" value="f"> Female
+		<label for="gender">Gender:</label>
+		<div class="radio-inline">
+			<input type="radio" name="gender" id="genderM" value="m">
+			Male
+		</div>
+
+		<div class="radio-inline">
+			<input type="radio" name="gender" id="genderF" value="f">
+			Female
 		</div>
 	</div>
-	<div id="5-StrengthsJar">
-		<div class="column">
-			<h1>Strategic Thinking</h1>
+	<h1>Pick your 5 Strengths</h1>
+	<div id="strengthsJar">
+		<div class="columnJar1">
+			<p>Strategic Thinking</p>
 			<label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="1">
 				Analytical
 			</label> <label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="1">
-				Analytical
+				Context
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="1">
-				Analytical
+				Futuristic
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="1">
-				Analytical
+				Ideation
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="1">
-				Analytical
+				Input
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="1">
-				Analytical
+				Intellection
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="1">
-				Analytical
+				Learner
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="1">
-				Analytical
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attribute" id="st-attribute" value="1">
-				Analytical
+				Strategic
 			</label>
 		</div>
-		<div class="column">
-			<h1>Executing</h1>
+		<div class="columnJar2">
+			<p>Executing</p>
 			<label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="1">
-				Analytical
+				Achiever
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="1">
-				Analytical
+				Arranger
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="1">
-				Analytical
+				Belief
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="1">
-				Analytical
+				Consistency
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="1">
-				Analytical
+				Deliberative
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="1">
-				Analytical
+				Discipline
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="1">
-				Analytical
+				Focus
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="1">
-				Analytical
+				Responsibility
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="1">
-				Analytical
+				Restorative
 			</label>
 		</div>
-		<div class="column">
-			<h1>Relationship Building</h1>
+		<div class="columnJar3">
+			<p>Relationship Building</p>
 			<label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="1">
-				Analytical
+				Adaptability
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="1">
-				Analytical
+				Connectedness
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="1">
-				Analytical
+				Developer
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="1">
-				Analytical
+				Empathy
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="1">
-				Analytical
+				Harmony
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="1">
-				Analytical
+				Includer
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="1">
-				Analytical
+				Individualization
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="1">
-				Analytical
+				Positivity
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="1">
-				Analytical
+				Relator
 			</label>
 		</div>
-		<div class="column">
-			<h1>Influencing</h1>
+		<div class="columnJar4">
+			<p>Influencing</p>
 			<label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="i-attribute" value="1">
-				Analytical
+				Activator
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="i-attribute" value="1">
-				Analytical
+				Command
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="i-attribute" value="1">
-				Analytical
+				Communication
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="i-attribute" value="1">
-				Analytical
+				Competition
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="i-attribute" value="1">
-				Analytical
+				Maximizer
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="i-attribute" value="1">
-				Analytical
+				Self-Assurance
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="i-attribute" value="1">
-				Analytical
+				Significant
 			</label><label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="i-attribute" value="1">
-				Analytical
+				Woo
 			</label>
 		</div>
-	</div>
+			</div>
+	
 
 
 	<label for="submit"></label> <input class="formSubmitButton"
