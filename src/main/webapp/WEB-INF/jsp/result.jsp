@@ -5,7 +5,7 @@
 
 
 
-	<strong><div class="alignmentResult "> YOU ARE (alignment).
+	<strong><div class="alignmentResult"> YOU ARE (alignment).
 <%--  	<h1> <c:out = value="${person.username} + you're + ${person.alignment}"/></h1>
  --%> 	
  </div></strong>

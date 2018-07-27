@@ -10,10 +10,11 @@
 	<strong>Current Participants:</strong>
 </div>
 <div class="resultSet">
-	<c:forEach var="persons" items="${person}">
+	<c:forEach var="person" items="${person}">
 		<div class="recentResultsContainer">
-			<c:out value="Submitted on: ${person.dateSubmitted}" />
-		<c:out value="By ${person.username}" />
+			<c:out value="Submitted on: ${person.dateSubmitted}"/>
+		<div><c:out value="By ${person.username}" /></div>
+		<c:out value="Alignment: ${person.alignment}"/>
        </div>
 </c:forEach>
 </div>
