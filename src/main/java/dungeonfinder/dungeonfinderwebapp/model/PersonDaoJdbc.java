@@ -22,8 +22,8 @@ public class PersonDaoJdbc implements PersonDao{
 	
 	@Override
 	public void save(Person person) {
-		String sqlInsertPerson = "INSERT INTO person(username, first_name, last_name, email, gender, datesubmitted ) VALUES (?,?,?,?,?,?) RETURNING person_id";
-		long id = jdbcTemplate.queryForObject(sqlInsertPerson, Long.class, person.getUsername(), person.getFirstName(),  person.getLastName(),person.geteMail(), person.getGender(), person.getDateSubmitted());
+		String sqlInsertPerson = "INSERT INTO person(username, first_name, last_name, email, gender, alignement, datesubmitted) VALUES (?,?,?,?,?,?) RETURNING person_id";
+		long id = jdbcTemplate.queryForObject(sqlInsertPerson, Long.class, person.getUsername(), person.getFirstName(),  person.getLastName(),person.geteMail(), person.getGender(),person.getAlignment(), person.getDateSubmitted());
 		person.setId(id);
 	}
 
@@ -41,7 +41,7 @@ public class PersonDaoJdbc implements PersonDao{
 			person.setLastName(results.getString("last_name"));
 			person.seteMail(results.getString("email"));
 			person.setGender(results.getString("gender"));
-//			person.setAlignment(results.getString())
+			person.setAlignment(results.getString("alignment"));
 			person.setDateSubmitted(results.getTimestamp("join_date").toLocalDateTime());
 			allPersons.add(person);
 		}
