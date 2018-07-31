@@ -5,10 +5,8 @@
 
 
 
-	<strong><div class="alignmentResult"> YOU ARE (alignment).
-<%--  	<h1> <c:out = value="${person.username} + you're + ${person.alignment}"/></h1>
- --%> 	
- </div></strong>
+<h1> <c:out value="${person.username} + you are + ${person.alignment}"/></h1>
+  	
  <a href="home"><button>Return to homepage</button></a> 
 	
 <%@include file="common/footer.jspf"%>

@@ -8,19 +8,20 @@ import javax.validation.constraints.*;
 public class Person {
 
 	private Long id;
-	@NotEmpty(message="Username required") 
-	@Size(max=15, message="Username is too long")
+//	
+//	@NotEmpty(message="Username required") 
+//	@Size(max=15, message="Username is too long")
 	private String username;
-	
-	@NotEmpty(message="Username required") 
-	@Size(max=15, message="Username is too long")
+//	
+//	@NotEmpty(message="Username required") 
+//	@Size(max=15, message="Username is too long")
 	private String firstName;
-	
-	@NotEmpty(message="Username required") 
-	@Size(max=15, message="Username is too long")
+//	
+//	@NotEmpty(message="Username required") 
+//	@Size(max=15, message="Username is too long")
 	private String lastName;
-	
-	@Email(message="Valid emails only")
+//	
+//	@Email(message="Valid emails only")
 	private String eMail;
 	
 	

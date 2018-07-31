@@ -10,6 +10,7 @@ import dungeonfinder.dungeonfinderwebapp.model.PersonDao;
 
 @Controller 
 public class HomeController {
+	
 	@Autowired
 	private PersonDao personDao;
 
