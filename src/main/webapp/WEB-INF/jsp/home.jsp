@@ -6,7 +6,7 @@
 	<h2>Dungeon-Finder 1.0</h2>
 </div>
 <div class="signUp">
-	<a href="signup"><button>Click here to begin!</button></a>
+	<a href="signup"><button class="btn btn-danger">Click here to begin!</button></a>
 </div>
 <div class="participantsTitle">
 	<strong>Current Participants:</strong>

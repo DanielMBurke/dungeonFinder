@@ -15,7 +15,7 @@ alignment varchar(50),
 join_date date NOT NULL,
 CONSTRAINT ck_gender CHECK (gender IN ('M','F'))
 ); 
- UNIQUE(username, email));
+UNIQUE(username, email));
 
 
 INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('RufusMcdoogan','Daniel','Burke','M','Lawful-Good','2018-07-17');

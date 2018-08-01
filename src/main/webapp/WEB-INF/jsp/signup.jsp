@@ -30,6 +30,7 @@
 	<h1>Pick your 5 Strengths</h1>
 	<div id="strengthsJar">
 		<div class="columnJar1">
+		
 			<p>Strategic Thinking</p>
 			<label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="st">

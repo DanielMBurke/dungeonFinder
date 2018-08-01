@@ -26,9 +26,11 @@ public class HomeController {
 		return "signup";
 	}
 
-	// This will become a POST METHOD once the calculations are set
 	@RequestMapping(path = "/result", method = RequestMethod.GET)
 	public String displayResult() {
 		return "/result";
 	}
+	
+	
+	
 }

@@ -1,5 +1,5 @@
 * {
-	padding: 0;
+	padding: 0px;
 	width: 100%;
 }
 /* HEADER */
@@ -57,15 +57,22 @@ h2 {
 
 .participantsTitle {
 	display: block;
+	font: bold 50px 'Yatra One', cursive;
+	color: black;
+		text-align: center;
+	
 }
 
 #resultSet {
+	font-weight:bold;
+	width:95%;
+	margin:auto;
+	padding: 10px;
 	display:grid;
-	grid-template-colums: 1fr 1fr 1fr 1fr;
-	grid-template-rows: auto-fit;
-	background-color: slategrey;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto-fill;
+	background-color: #7b90a8;
 	border-radius: 25px;
-	width: 25%;
 	text-align: center;
 	
 }
@@ -83,19 +90,19 @@ h2 {
 }
 
 #lg {
-	color: gold;
+	color: #72dede;
 }
 
 #ln {
-	color: #615004;
+	color: #00c712;
 }
 
 #le {
-	color: #41701e;
+	color: #e7b000;
 }
 
 #ng {
-	color: #00ff1b;
+	color: #0044ff;
 }
 
 #tn {
@@ -103,19 +110,19 @@ h2 {
 }
 
 #ne {
-	color: #561a1c;
+	color: #fe9200;
 }
 
 #cg {
-	color: orange;
+	color: #8602ff;
 }
 
 #cn {
-	color: #fd80d2;
+	color: #ff007c;
 }
 
 #ce {
-	color: red;
+	color: #d73635;
 }
 
 /* 	https://i.imgur.com/EDbAEjM.gif
@@ -129,12 +136,15 @@ h2 {
 }
 
 #strengthsJar {
+	margin:auto;
+	width:98%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	background-image: url("wood.jpg");
 }
 
 #strengthsJar>div {
+		padding:5px;
 	background-color: dimgrey;
 	font: 18px 'Yatra One', cursive;
 }
