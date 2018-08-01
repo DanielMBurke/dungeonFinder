@@ -2,10 +2,7 @@
 <%@include file="common/header.jspf"%>
 
 
-
-
-
-<h1> <c:out value="${person.username} + you are + ${person.alignment}"/></h1>
+<h1> <c:out value="${person.username} you are ${person.alignment}"/></h1>
   	
  <a href="home"><button>Return to homepage</button></a> 
 	

@@ -17,9 +17,9 @@
 }
 
 /* Footer */
-#footerImage{
-
-	}
+#footerImage {
+	
+}
 
 /* HOMEPAGE */
 .headJar {
@@ -30,15 +30,12 @@
 }
 
 .signUp {
-display: block;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
-	height: 75%;	width: 40%;
-	text-align: center;
-}
-
-.recentEntries {
+	height: 75%;
+	width: 40%;
 	text-align: center;
 }
 
@@ -57,50 +54,69 @@ h2 {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 }
-#lg{
-color: gold; 
+
+.participantsTitle {
+	display: block;
 }
 
-#ln{
-	color: #615004; 
+#resultSet {
+	display:grid;
+	grid-template-colums: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto-fit;
+	background-color: slategrey;
+	border-radius: 25px;
+	width: 25%;
+	text-align: center;
 	
 }
 
-#le{
-	color: #41701e; 
+.recentEntries {
 	
 }
 
-#ng{
-	color: #00ff1b; 
+.recentEntries>div:nth-child(even) {
 	
 }
 
-#tn{
-	color: grey; 
+.submitUser {
+	background-color: transparent;
+}
+
+#lg {
+	color: gold;
+}
+
+#ln {
+	color: #615004;
+}
+
+#le {
+	color: #41701e;
+}
+
+#ng {
+	color: #00ff1b;
+}
+
+#tn {
 	
 }
 
-#ne{color: #561a1c; 
-	
+#ne {
+	color: #561a1c;
 }
 
-#cg{
-	color: orange; 
-	
+#cg {
+	color: orange;
 }
 
-#cn{color: #fd80d2; 
-	
+#cn {
+	color: #fd80d2;
 }
 
-#ce{color: red; 
-	
+#ce {
+	color: red;
 }
-	
-
-
-
 
 /* 	https://i.imgur.com/EDbAEjM.gif
  */
@@ -111,33 +127,32 @@ color: gold;
 	margin-left: auto;
 	margin-right: auto;
 }
-#strengthsJar{
-	display:grid;
-	 grid-template-columns: 1fr 1fr 1fr 1fr;
-	 background-image: url("wood.jpg");
-	
-	}
 
-#strengthsJar > div	{
-		background-color:dimgrey;
-		font:  18px 'Yatra One', cursive;
-	
-}
-.columnJar1{
-	color:#8a0105;
+#strengthsJar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	background-image: url("wood.jpg");
 }
 
-.columnJar2{
-		color:purple;
-	
+#strengthsJar>div {
+	background-color: dimgrey;
+	font: 18px 'Yatra One', cursive;
 }
-.columnJar3{
-		color:#00008a;
-	
+
+.columnJar1 {
+	color: #8a0105;
 }
-.columnJar4{
-		color:orange;
-	
+
+.columnJar2 {
+	color: purple;
+}
+
+.columnJar3 {
+	color: #00008a;
+}
+
+.columnJar4 {
+	color: orange;
 }
 
 /* RESULTS PAGE

@@ -1,8 +1,5 @@
 DROP TABLE IF EXISTS "person";
-DROP TABLE IF EXISTS "person_attributes";
-DROP TABLE IF EXISTS "attributes";
-DROP SEQUENCE IF EXISTS "seq_person_id";
-DROP SEQUENCE IF EXISTS "seq_attribute_id";
+Drop SEQUENCE seq_person_id;
 
 
 CREATE SEQUENCE seq_person_id;
@@ -14,34 +11,19 @@ first_name varchar(25) NOT NULL,
 last_name varchar(25) NOT NULL,
 email varchar(50),
 gender varchar(1) DEFAULT 'M' NOT NULL,
+alignment varchar(50),
 join_date date NOT NULL,
-CONSTRAINT pk_person_person_id PRIMARY KEY (person_id),
 CONSTRAINT ck_gender CHECK (gender IN ('M','F'))
-); UNIQUE(username, email));
+); 
+ UNIQUE(username, email));
 
 
-CREATE TABLE public."person_attributes"
-(attribute_id integer NOT NULL, 
-person_id integer NOT NULL,
-
-CONSTRAINT pk_person_attributes_attributes_attributes_id_person_id
-PRIMARY KEY (attribute_id, person_id));
-
-CREATE SEQUENCE seq_attribute_id;
-
-CREATE TABLE public."attributes"
-(attribute_id integer NOT NULL DEFAULT nextval('seq_attribute_id'),
-attribute1 varchar(25) NOT NULL,
-attribute2 varchar(25) NOT NULL,
-attribute3 varchar(25) NOT NULL,
-attribute4 varchar(25) NOT NULL,
-attribute5 varchar(25) NOT NULL,
-CONSTRAINT pk_attribute_attribute_id
-PRIMARY KEY (attribute_id));
-
-ALTER TABLE person_attributes ADD FOREIGN KEY (attribute_id) REFERENCES attributes(attribute_id);
-ALTER TABLE person_attributes ADD FOREIGN KEY (person_id) REFERENCES person(person_id);
-
-
-INSERT INTO "person"(username, first_name, last_name,join_date) VALUES ('RufusMcdoogan','Daniel','Burke','2018-07-17');
-INSERT INTO "attributes"(attribute_id,attribute1,attribute2,attribute3,attribute4,attribute5) VALUES (1,'futuristic','achiever','strategic','significance','positivity');
+INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('RufusMcdoogan','Daniel','Burke','M','Lawful-Good','2018-07-17');
+INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('BrakMcRibber','Brak','Fondue','M','Lawful-Neutral','2018-07-18');
+INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('SrGreaterGood','Lord','Vold','M','Lawful-Evil','2018-07-18');
+INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('SuzyBGoode','Susan','Mebal','F','Neutral-Good','2018-07-19');
+INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('MadameMeh','Gray','Area','F','True-Neutral','2018-07-20');
+INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('MrWhatev','Ted','Bearry','M','Neutral-Evil','2018-07-21');
+INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('Sif','Mary','Sue','F','Chaotic-Good','2018-07-22');
+INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('MrPink','Tony','Farsetter','M','Chaotic-Neutral','2018-07-22');
+INSERT INTO "person"(username, first_name, last_name, gender, alignment ,join_date) VALUES ('PieceOSith','Darth','Plagus','M','Chaotic-Evil','2018-07-23');

@@ -7,4 +7,6 @@ public interface PersonDao {
 	public List<Person> getAllPersons();
 	
 	public void save(Person post);
+
+
 }

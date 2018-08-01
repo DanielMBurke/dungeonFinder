@@ -1,9 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@include file="common/header.jspf"%>
 
-
 <c:url var="formAction" value="/result" />
-<form method="POST" action="${formAction}">
+<form method="GET" action="${formAction}">
 	<div class="formInputGroup">
 		<label for="firstname">First name:</label> <input type="text"
 			name="firstname" id="firstname" />
@@ -19,15 +18,15 @@
 	<div class="formInputGroup">
 		<label for="gender">Gender:</label>
 		<div class="radio-inline">
-			<input type="radio" name="gender" id="genderM" value="m">
+			<input type="radio" name="gender" id="genderM" value="M">
 			Male
 		</div>
-
 		<div class="radio-inline">
-			<input type="radio" name="gender" id="genderF" value="f">
+			<input type="radio" name="gender" id="genderF" value="F">
 			Female
 		</div>
 	</div>
+
 	<h1>Pick your 5 Strengths</h1>
 	<div id="strengthsJar">
 		<div class="columnJar1">
@@ -149,7 +148,6 @@
 			</label>
 		</div>
 	</div>
-	
 	<label for="submit"></label> <input class="formSubmitButton"
 		type="submit" value="Submit to the sorting hat" />
 </form>
