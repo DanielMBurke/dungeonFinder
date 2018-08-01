@@ -4,9 +4,11 @@
 }
 /* HEADER */
 .homecontainer {
-	background-image:
+		background-color: #7b90a8;
+	
+	/* background-image:
 		url(http://www.news-world.us/wp-content/uploads/2015/02/Stone-and-wall-backgrounds-3.jpg);
-}
+ */}
 
 #headerImage {
 	display: block;
@@ -23,7 +25,9 @@
 
 /* HOMEPAGE */
 .headJar {
-	background-color: #2a2a2a;
+	padding:3px;
+	background-color: #7b90a8;
+		border-radius: 25px;
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -59,22 +63,20 @@ h2 {
 	display: block;
 	font: bold 50px 'Yatra One', cursive;
 	color: black;
-		text-align: center;
-	
+	text-align: center;
 }
 
 #resultSet {
-	font-weight:bold;
-	width:95%;
-	margin:auto;
+	font-weight: bold; width : 95%;
+	margin: auto;
 	padding: 10px;
-	display:grid;
+	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto-fill;
 	background-color: #7b90a8;
 	border-radius: 25px;
 	text-align: center;
-	
+	width: 95%;
 }
 
 .recentEntries {
@@ -94,7 +96,7 @@ h2 {
 }
 
 #ln {
-	color: #00c712;
+	color: #007a19;
 }
 
 #le {
@@ -135,18 +137,25 @@ h2 {
 	margin-right: auto;
 }
 
-#strengthsJar {
-	margin:auto;
-	width:98%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	background-image: url("wood.jpg");
+.shrink {
+	width: 50%;
 }
 
-#strengthsJar>div {
-		padding:5px;
+#strengthsJar {
+	margin: auto;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-content: center;
+	
+}
+
+#strengthsJar > div {
+	padding: 5px;
 	background-color: dimgrey;
 	font: 18px 'Yatra One', cursive;
+	border-radius: 5px;
+	
 }
 
 .columnJar1 {
@@ -154,7 +163,7 @@ h2 {
 }
 
 .columnJar2 {
-	color: purple;
+	color: #8d0064;
 }
 
 .columnJar3 {

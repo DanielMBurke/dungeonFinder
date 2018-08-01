@@ -26,13 +26,15 @@
 			Female
 		</div>
 	</div>
-
 	<h1>Pick your 5 Strengths</h1>
 	<div id="strengthsJar">
+	<c:set var="law" value="0"/>
+	<c:set var="good" value="0"/>
+		<!-- needs logic when these boxes are selected (law value ++)(good value ++)-->		
 		<div class="columnJar1">
-		
-			<p>Strategic Thinking</p>
-			<label class="checkbox-inline" for="usertype"> <input
+	
+			<p>Strategic Thinking</p> 
+	<label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="st-attribute" value="st">
 				Analytical
 			</label> <label class="checkbox-inline" for="usertype"> <input
@@ -58,7 +60,9 @@
 				Strategic
 			</label>
 		</div>
+		<!-- needs logic when these boxes are selected (law value ++)(good value --)-->
 		<div class="columnJar2">
+		
 			<p>Executing</p>
 			<label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="e-attribute" value="e">
@@ -88,8 +92,10 @@
 				type="checkbox" name="attribute" id="e-attribute" value="e">
 				Restorative
 			</label>
-		</div>
+		</div>	
+		<!-- needs logic when these boxes are selected (law value --)(good value ++)-->
 		<div class="columnJar3">
+	
 			<p>Relationship Building</p>
 			<label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="rb-attribute" value="rb">
@@ -120,7 +126,9 @@
 				Relator
 			</label>
 		</div>
+		<!--needs logic when these boxes are selected (law value --)(good value --)-->
 		<div class="columnJar4">
+		
 			<p>Influencing</p>
 			<label class="checkbox-inline" for="usertype"> <input
 				type="checkbox" name="attribute" id="i-attribute" value="i">
@@ -149,14 +157,18 @@
 			</label>
 		</div>
 	</div>
-	<label for="submit"></label> <input class="formSubmitButton"
+	
+<!--	 final logic when all check boxes are added and return the alignment as a string-->
+	<label for="submit"></label> <input
+		class="formSubmitButton shrink btn btn-danger btn-lg center-block"
 		type="submit" value="Submit to the sorting hat" />
 </form>
 
 <c:url var="backHome" value="/home" />
 <form method="GET" action="${backHome}">
-	<label for="submit"></label> <input class="backButton" type="submit"
-		value="Return to Home Screen" />
+	<label for="submit"></label> <input
+		class="backButton  shrink btn btn-danger btn-lg center-block"
+		type="submit" value="Return to Home Screen" />
 </form>
 
 

@@ -5,8 +5,10 @@
 	<h1>Where do you stand?</h1>
 	<h2>Dungeon-Finder 1.0</h2>
 </div>
+<br>
 <div class="signUp">
-	<a href="signup"><button class="btn btn-danger">Click here to begin!</button></a>
+	<a href="signup"><button class="btn btn-danger">Click here
+			to begin!</button></a>
 </div>
 <div class="participantsTitle">
 	<strong>Current Participants:</strong>
