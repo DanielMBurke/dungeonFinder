@@ -4,10 +4,12 @@ import java.util.List;
 
 public interface PersonDao {
 
+	public Person save(Person person);
+
 	public List<Person> getAllPersons();
 
-	public void save(Person post);
+	public Person getSelectedPersons(String username);
+	
 
-	void getPersonAligment(Integer lawful, Integer good);
 
 }
