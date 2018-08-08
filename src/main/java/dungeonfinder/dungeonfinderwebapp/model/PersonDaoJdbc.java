@@ -27,8 +27,8 @@ public class PersonDaoJdbc implements PersonDao {
 				+ "first_name,"
 				+ "last_name,"
 				+ "gender,"
-				+ "alignement,"
-				+ "datesubmitted)"
+				+ "alignment,"
+				+ "join_date)"
 				+ "VALUES (?,?,?,?,?,?) "
 				+ "RETURNING person_id";
 		long id = jdbcTemplate.queryForObject(sqlInsertPerson, Long.class, 
@@ -40,13 +40,13 @@ public class PersonDaoJdbc implements PersonDao {
 				personToSave.getDateSubmitted());
 				personToSave.setId(id);
 	} else {
-		String updateSql =  "INSERT INTO person"
+		String updateSql =  "UPDATE person"
 				+ "(username=?,"
 				+ "first_name=?,"
 				+ "last_name=?,"
 				+ "gender=?,"
-				+ "alignement=?,"
-				+ "datesubmitted=?)"
+				+ "alignment=?,"
+				+ "join_date=?)"
 				+ "WHERE person_id=?";
 		jdbcTemplate.update(updateSql,
 				personToSave.getUsername(), 
@@ -72,7 +72,6 @@ public class PersonDaoJdbc implements PersonDao {
 			person.setUsername(results.getString("username"));
 			person.setFirstName(results.getString("first_name"));
 			person.setLastName(results.getString("last_name"));
-			person.seteMail(results.getString("email"));
 			person.setGender(results.getString("gender"));
 			person.setThisAlignment(results.getString("alignment"));
 			person.setDateSubmitted(results.getTimestamp("join_date").toLocalDateTime());
@@ -90,7 +89,6 @@ public class PersonDaoJdbc implements PersonDao {
 			selectedPerson.setUsername(results.getString("username"));
 			selectedPerson.setFirstName(results.getString("first_name"));
 			selectedPerson.setLastName(results.getString("last_name"));
-			selectedPerson.seteMail(results.getString("email"));
 			selectedPerson.setGender(results.getString("gender"));
 			selectedPerson.setThisAlignment(results.getString("alignment"));
 			selectedPerson.setDateSubmitted(results.getTimestamp("join_date").toLocalDateTime());	

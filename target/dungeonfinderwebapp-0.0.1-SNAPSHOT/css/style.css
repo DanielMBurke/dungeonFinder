@@ -1,0 +1,202 @@
+* {
+	padding: 0px;
+	width: 100%;
+}
+/* HEADER */
+.homecontainer {
+		background-color: #7b90a8;
+	
+	/* background-image:
+		url(http://www.news-world.us/wp-content/uploads/2015/02/Stone-and-wall-backgrounds-3.jpg);
+ */}
+
+#headerImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: 75%;
+}
+
+/* Footer */
+#footerImage {
+	
+}
+
+/* HOMEPAGE */
+.headJar {
+	padding:3px;
+	background-color: #7b90a8;
+		border-radius: 25px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.signUp {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: 75%;
+	width: 40%;
+	text-align: center;
+}
+
+h1 {
+	color: black;
+	font: bold 60px 'Yatra One', cursive;
+	text-align: center;
+}
+
+h2 {
+	font: bold 70px 'Yatra One', cursive;
+	text-align: center;
+	background-image:
+		url(https://thumbs.gfycat.com/WatchfulObeseBarasingha-size_restricted.gif);
+	background-size: contain;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.participantsTitle {
+	display: block;
+	font: bold 50px 'Yatra One', cursive;
+	color: black;
+	text-align: center;
+}
+
+#resultSet {
+	font-weight: bold; width : 95%;
+	margin: auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto-fill;
+	background-color: #7b90a8;
+	border-radius: 25px;
+	text-align: center;
+	width: 95%;
+}
+
+.recentEntries {
+	
+}
+
+.recentEntries>div:nth-child(even) {
+	
+}
+
+.submitUser {
+	background-color: transparent;
+}
+
+#lg {
+	color: #72dede;
+}
+
+#ln {
+	color: #007a19;
+}
+
+#le {
+	color: #e7b000;
+}
+
+#ng {
+	color: #0044ff;
+}
+
+#tn {
+	
+}
+
+#ne {
+	color: #fe9200;
+}
+
+#cg {
+	color: #8602ff;
+}
+
+#cn {
+	color: #ff007c;
+}
+
+#ce {
+	color: #d73635;
+}
+
+/* 	https://i.imgur.com/EDbAEjM.gif
+ */
+
+/* SIGN-UP PAGE */
+.formInputGroup {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.shrink {
+	width: 50%;
+}
+
+#strengthsJar {
+	margin: auto;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-content: center;
+	
+}
+
+#strengthsJar > div {
+	padding: 5px;
+	background-color: dimgrey;
+	font: 18px 'Yatra One', cursive;
+	border-radius: 5px;
+	
+}
+
+#stJar {
+	color: #8a0105;
+}
+
+#eJar {
+	color: #8d0064;
+}
+
+#rbJar {
+	color: #00008a;
+}
+
+#iJar {
+	color: orange;
+}
+
+/* RESULTS PAGE
+ */
+.alignmentResult {
+	font: bold 70px 'Yatra One', cursive;
+	text-align: center;
+	background-image:
+		url(https://thumbs.gfycat.com/WatchfulObeseBarasingha-size_restricted.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 30px;
+	padding: auto;
+	margin: auto;
+	width: 80%;
+}
+
+.alignmentResult>button {
+	font: bold 40px 'Yatra One', cursive;
+	font-color: #000;
+	background-color: transparent;
+	border-color: transparent;
+	width: 50%;
+	justify-self: center;
+}
+/*  ;
+  */
+}

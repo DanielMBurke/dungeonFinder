@@ -9,22 +9,25 @@ public class Person {
 	private Long id;
 
 	@NotEmpty(message = "Username required")
-	@Size(max = 15, message = "Username is too long")
+	@Size(min = 6, max = 15, message = "Username length invalid")
 	private String username;
 
-	@NotEmpty(message = "Username required")
-	@Size(max = 15, message = "Username is too long")
+	@NotEmpty(message = "First name required")
+	@Size(min = 3, max = 15, message = "First name length invalid")
 	private String firstName;
 
-	@NotEmpty(message = "Username required")
-	@Size(max = 15, message = "Username is too long")
+	@NotEmpty(message = "Last name required")
+	@Size(min = 3, max = 15, message = "Last name length invalid")
 	private String lastName;
 
-	@Email(message = "Valid emails only")
-	private String eMail;
-
-	private String gender;
+//	@Email(message = "Valid emails only")
+//	private String eMail;
+	
+	@NotEmpty(message = "Gender selection required")
+	private String gender; 
 	private LocalDateTime dateSubmitted;
+	
+	@NotEmpty(message = "You must select 5 Strengths")
 	private String alignment;
 
 	public Long getId() {
@@ -59,13 +62,13 @@ public class Person {
 		this.lastName = lastName;
 	}
 
-	public String geteMail() {
-		return eMail;
-	}
-
-	public void seteMail(String eMail) {
-		this.eMail = eMail;
-	}
+//	public String geteMail() {
+//		return eMail;
+//	}
+//
+//	public void seteMail(String eMail) {
+//		this.eMail = eMail;
+//	}
 
 	public String getGender() {
 		return gender;

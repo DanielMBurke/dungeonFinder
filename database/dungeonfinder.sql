@@ -11,7 +11,7 @@ first_name varchar(25) NOT NULL,
 last_name varchar(25) NOT NULL,
 email varchar(50),
 gender varchar(1) DEFAULT 'M' NOT NULL,
-alignment varchar(50),
+alignment varchar(50) NOT NULL,
 join_date date NOT NULL,
 CONSTRAINT ck_gender CHECK (gender IN ('M','F'))
 ); 

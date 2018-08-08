@@ -1,164 +1,133 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
 <%@include file="common/header.jspf"%>
 
-<c:url var="formAction" value="/result" />
-<form method="POST" action="${formAction}">
-	<div class="formInputGroup">
-		<label for="first_name">First name:</label> <input type="text"
-			name="first_name" id="first_name" />
+<%System.out.println(request.getAttribute("person")); %>
+<c:url value="/signup" var="signupURL" />
+<form:form action="${signupURL}" method="POST" modelAttribute="person">
+	<div class="form-Group">
+		<form:label path="firstName"> First name:</form:label>
+		<form:input path="firstName" class="form-control" />
+		<form:errors path="firstName" class="error" />
 	</div>
-	<div class="formInputGroup">
-		<label for="last_name">Last name:</label> <input type="text"
-			name="last_name" id="last_name" />
+	<div class="form-Group">
+		<form:label path="lastName">Last name:</form:label>
+		<form:input path="lastName" class="form-control" />
+		<form:errors path="lastName" class="error" />
 	</div>
-	<div class="formInputGroup">
-		<label for="username">Username:(Required)</label> <input type="text"
-			name="username" id="username" />
+	<div class="form-Group">
+		<form:label path="username">Username:</form:label>
+		<form:input path="username" class="form-control" />
+		<form:errors path="username" class="error" />
+
 	</div>
-	<div class="formInputGroup">
-		<label for="gender">Gender:</label>
-		<div class="radio-inline">
-			<input type="radio" name="gender" id="genderM" value="M">
-			Male
-		</div>
-		<div class="radio-inline">
-			<input type="radio" name="gender" id="genderF" value="F">
-			Female
-		</div>
+	<div class="form-Group">
+		<form:label path="gender">Male</form:label>
+		<form:radiobutton path="gender" class="radio-inline" value="M" />
+		<form:errors path="gender" class="error" />
+
+		<form:label path="gender">Female</form:label>
+		<form:radiobutton path="gender" class="radio-inline" value="F" />
+		<form:errors path="gender" class="error" />
+
 	</div>
 	<h1>Pick your 5 Strengths</h1>
 	<div id="strengthsJar">
 		<div id="stJar">
 			<p>Strategic Thinking</p>
-			<label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="st-attribute" value="1:1">
-				Analytical
-			</label> <label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="st-attribute" value="1:2">
-				Context
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="st-attribute" value="1:3">
-				Futuristic
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="st-attribute" value="1:4">
-				Ideation
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="st-attribute" value="1:5">
-				Input
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="st-attribute" value="1:6">
-				Intellection
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="st-attribute" value="1:7">
-				Learner
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="st-attribute" value="1:8">
-				Strategic
-			</label>
+			<input type="checkbox" name="attributes" id="st-attribute"
+				value="1:1"> Analytical <input name="attributes"
+				class="checkbox-inline" type="checkbox" id="st-attribute"
+				value="1:2"></input> Context <input name="attributes"
+				type="checkbox" class="checkbox-inline" id="st-attribute"
+				value="1:3"></input> Futuristic <input name="attributes"
+				type="checkbox" class="checkbox-inline" name="attributes"
+				id="st-attribute" value="1:4"></input> Ideation <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="st-attribute" value="1:5"></input> Input <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="st-attribute" value="1:6"></input> Intellection <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="st-attribute" value="1:7"></input> Learner <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="st-attribute" value="1:8"></input> Strategic
 		</div>
 		<div id="eJar">
 			<p>Executing</p>
-			<label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="e-attribute" value="2:1">
-				Achiever
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="e-attribute" value="2:2">
-				Arranger
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="e-attribute" value="2:3">
-				Belief
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="e-attribute" value="2:4">
-				Consistency
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="e-attribute" value="2:5">
-				Deliberative
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="e-attribute" value="2:6">
-				Discipline
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="e-attribute" value="2:7">
-				Focus
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="e-attribute" value="2:8">
-				Responsibility
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="e-attribute" value="2:9">
-				Restorative
-			</label>
+			<input name="attributes" type="checkbox" class="checkbox-inline"
+				id="e-attribute" value="2:1"></input> Achiever <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="e-attribute" value="2:2"></input> Arranger <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="e-attribute" value="2:3"></input> Belief <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="e-attribute" value="2:4"></input> Consistency <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="e-attribute" value="2:5"></input> Deliberative <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="e-attribute" value="2:6"></input> Discipline <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="e-attribute" value="2:7"></input> Focus <input name="attributes"
+				type="checkbox" class="checkbox-inline" id="e-attribute" value="2:8"></input>
+			Responsibility <input name="attributes" type="checkbox"
+				class="checkbox-inline" name="attributes" id="e-attribute"
+				value="2:9"></input> Restorative
 		</div>
 		<div id="rbJar">
 			<p>Relationship Building</p>
-			<label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="rb-attribute" value="3:1">
-				Adaptability
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="rb-attribute" value="3:2">
-				Connectedness
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="rb-attribute" value="3:3">
-				Developer
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attribute[]" id="rb-attribute" value="3:4">
-				Empathy
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="rb-attribute" value="3:5">
-				Harmony
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="rb-attribute" value="3:6">
-				Includer
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="rb-attribute" value="3:7">
-				Individualization
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="rb-attribute" value="3:8">
-				Positivity
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="rb-attribute" value="3:9">
-				Relator
-			</label>
+			<input name="attributes" type="checkbox" class="checkbox-inline"
+				id="rb-attribute" value="3:1"></input> Adaptability <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="rb-attribute" value="3:2"></input> Connectedness <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="rb-attribute" value="3:3"></input> Developer <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="rb-attribute" value="3:4"></input> Empathy <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="rb-attribute" value="3:5"></input> Harmony <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="rb-attribute" value="3:6"></input> Includer <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="rb-attribute" value="3:7"></input> Individualization <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				name="attributes" id="rb-attribute" value="3:8"></input> Positivity
+			<input name="attributes" type="checkbox" class="checkbox-inline"
+				id="rb-attribute" value="3:9"></input> Relator
 		</div>
 
 		<div id="iJar">
 			<p>Influencing</p>
-			<label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="i-attribute" value="4:1">
-				Activator
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="i-attribute" value="4:2">
-				Command
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="i-attribute" value="4:3">
-				Communication
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="i-attribute" value="4:4">
-				Competition
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="i-attribute" value="4:5">
-				Maximizer
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="i-attribute" value="4:6">
-				Self-Assurance
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="i-attribute" value="4:7">
-				Significant
-			</label><label class="checkbox-inline" for="usertype"> <input
-				type="checkbox" name="attributes[]" id="i-attribute" value="4:8">
-				Woo
-			</label>
+			<input name="attributes" type="checkbox" class="checkbox-inline"
+				id="i-attribute" value="4:1"></input> Activator <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="i-attribute" value="4:2"></input> Command <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="i-attribute" value="4:3"></input> Communication <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				name="attributes" id="i-attribute" value="4:4"></input> Competition
+			<input name="attributes" type="checkbox" class="checkbox-inline"
+				id="i-attribute" value="4:5"></input> Maximizer <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="i-attribute" value="4:6"></input> Self-Assurance <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="i-attribute" value="4:7"></input> Significant <input
+				name="attributes" type="checkbox" class="checkbox-inline"
+				id="i-attribute" value="4:8"></input> Woo
 		</div>
 	</div>
-	<label for="submit"></label> <input
+	<label for="submit"></label>
+	<input
 		class="formSubmitButton shrink btn btn-danger btn-lg center-block"
 		type="submit" value="Submit to the sorting hat" />
-</form>
+</form:form>
 
 
-<c:url var="backHome" value="/home" />
-<form method="GET" action="${backHome}">
-	<label for="submit"></label> <input
-		class="backButton  shrink btn btn-danger btn-lg center-block"
+<c:url var="backHomeURL" value="/home" />
+<form:form action="${backHomeURL}" method="GET">
+	<label for="submit"></label>
+	<input class="backButton  shrink btn btn-danger btn-lg center-block"
 		type="submit" value="Return to Home Screen" />
-</form>
+</form:form>
 
 <%@include file="common/footer.jspf"%>
