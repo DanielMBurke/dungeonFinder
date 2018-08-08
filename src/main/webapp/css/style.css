@@ -119,6 +119,7 @@ h2 {
 /* SIGN-UP PAGE */
 .form-Group {
 	width: 50%;
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -131,7 +132,7 @@ h2 {
 	width: 98%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	
+	margin:auto;
 }
 
 #strengthsJar > div {

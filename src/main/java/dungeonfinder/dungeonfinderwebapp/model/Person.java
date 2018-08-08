@@ -87,6 +87,7 @@ public class Person {
 	}
 
 	public String getAlignment() {
+		
 		return alignment;
 	}
 
@@ -113,35 +114,35 @@ public class Person {
 	// the alignment using the logic below
 	
 	public void setAlignment(Integer lawful, Integer good) {
-		lawful = (lawful * 2);
-		good = (good * 2);
-		Person person = new Person();
+//		lawful = (lawful * 2);
+//		good = (good * 2);
 		if (lawful >= 3 && good >= 3) {//
-			person.setThisAlignment("Lawful Good");
+			this.setThisAlignment("Lawful-Good");
 
 		} else if ((lawful >= 3) && (good < 3 && good > -3)) {//
-			person.setThisAlignment("Lawful Neutral");
+			this.setThisAlignment("Lawful-Neutral");
 
 		} else if ((lawful > 2 && good <= -3)) {//
-			person.setThisAlignment("Lawful Evil");
+			this.setThisAlignment("Lawful-Evil");
 
 		} else if ((lawful < 3 && lawful > -3) && (good >= 3)) {//
-			person.setThisAlignment("Neutral Good");
+			this.setThisAlignment("Neutral-Good");
 
 		} else if ((lawful <= 2 && lawful >= -2) && (good <= 2 && good >= -2)) {//
-			person.setThisAlignment("True Neutral");
+			this.setThisAlignment("True-Neutral");
 
 		} else if ((lawful < 3 && lawful > -3) && good < -2) {//
-			person.setThisAlignment("Neutral Evil");
+			this.setThisAlignment("Neutral-Evil");
 
 		} else if ((lawful < -3 && good >= 3)) {//
-			person.setThisAlignment("Chaotic Good");
+			this.setThisAlignment("Chaotic-Good");
 
 		} else if ((lawful < -3) && (good < 3 && good > -3)) {
-			person.setThisAlignment("Chaotic Neutral");
+			this.setThisAlignment("Chaotic-Neutral");
 
 		} else if (lawful <= -3 && good <= -3) {
-			person.setThisAlignment("Chaotic Evil");//
-		}
+			this.setThisAlignment("Chaotic-Evil");//
+			
+		} else this.setThisAlignment("Derp");
 	}
 }

@@ -35,7 +35,8 @@ public class SignUpController {
 			HttpSession session, 
 			BindingResult result,
 			RedirectAttributes flash) {
-		
+		System.out.println(attributes[0]);
+
 		if(result.hasErrors()) {
 			flash.addFlashAttribute("person", person);
 			flash.addFlashAttribute(BindingResult.MODEL_KEY_PREFIX + "person", result);
@@ -43,31 +44,29 @@ public class SignUpController {
 		}
 		Integer lawful = 0;
 		Integer good = 0;
+		
 		for (String attrib : attributes) {
-			if (attrib.substring(0, 1).equals("1")) { // Strategic Thinking (+1 Good, +1 Lawful)
+			if (attrib.startsWith("1")){ // Strategic Thinking (+1 Good, +1 Lawful)
 				lawful++;
 				good++;
-			} else if (attrib.substring(0, 1).equals("2")) { // Executing (+1 Good, -1 Lawful)
+			} else if (attrib.startsWith("2")){ // Executing (+1 Good, -1 Lawful)
 				lawful--;
 				good++;
-			} else if (attrib.substring(0, 1).equals("3")) { // Relationship Building (-1 Good, +1 Lawful)
+			} else if (attrib.startsWith("3")){ // Relationship Building (-1 Good, +1 Lawful)
 				lawful++;
 				good--;
-			} else if (attrib.substring(0, 1).equals("4")) {// Influencing (-1 Good, -1 Lawful)
+			} else if (attrib.startsWith("4")){// Influencing (-1 Good, -1 Lawful)
 				lawful--;
 				good--;
 			}
 		}
+		 person.setAlignment(lawful, good);
 		LocalDateTime joinDate = LocalDateTime.now();
-		person.setAlignment(lawful, good);
 		person.setDateSubmitted(joinDate);
+		
 		personDao.save(person);
-
 		session.setAttribute("person", person);	
-	
-		
 		flash.addFlashAttribute("message", "Congratulations!");
-		
 		return "redirect:/result";
 	}
 

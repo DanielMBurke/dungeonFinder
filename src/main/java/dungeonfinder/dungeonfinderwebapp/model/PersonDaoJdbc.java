@@ -18,7 +18,7 @@ public class PersonDaoJdbc implements PersonDao {
 	public PersonDaoJdbc(DataSource dataSource) {
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
-
+	
 	@Override
 	public Person save(Person personToSave) {
 		if(personToSave.getId() == null) {
@@ -60,7 +60,6 @@ public class PersonDaoJdbc implements PersonDao {
 		return personToSave;
 	}
 	
-
 	@Override
 	public List<Person> getAllPersons() {
 		List<Person> allPersons = new ArrayList<>();
@@ -94,7 +93,5 @@ public class PersonDaoJdbc implements PersonDao {
 			selectedPerson.setDateSubmitted(results.getTimestamp("join_date").toLocalDateTime());	
 		}
 		return selectedPerson;
-	}
-
-	
+	}	
 }
