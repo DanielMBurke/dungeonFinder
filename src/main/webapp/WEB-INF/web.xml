@@ -6,14 +6,12 @@
          version="3.1">
 		 
   <display-name>Hello Spring MVC Application</display-name>
-  
   <!-- This is the Spring DispatcherServlet -->
   <servlet>
     <servlet-name>springmvc</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
-  
   <!-- This maps all application requests to the Spring DispatcherServlet -->
   <servlet-mapping>
     <servlet-name>springmvc</servlet-name>
