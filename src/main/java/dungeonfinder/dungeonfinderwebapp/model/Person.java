@@ -134,10 +134,10 @@ public class Person {
 		} else if ((lawful < 3 && lawful > -3) && good < -2) {//
 			this.setThisAlignment("Neutral-Evil");
 
-		} else if ((lawful < -3 && good >= 3)) {//
+		} else if ((lawful <= -3 && good >= 3)) {//
 			this.setThisAlignment("Chaotic-Good");
 
-		} else if ((lawful < -3) && (good < 3 && good > -3)) {
+		} else if ((lawful <= -3) && (good < 3 && good > -3)) {
 			this.setThisAlignment("Chaotic-Neutral");
 
 		} else if (lawful <= -3 && good <= -3) {

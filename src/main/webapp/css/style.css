@@ -53,6 +53,11 @@ h2 {
 	-webkit-background-clip: text;
 }
 
+h3{
+	font: bold 70px 'Yatra One', cursive;
+	text-align: center;
+}
+
 .participantsTitle {
 	display: block;
 	font: bold 50px 'Yatra One', cursive;
@@ -78,7 +83,43 @@ h2 {
 	background-color: transparent;
 }
 
-#lg {
+
+/* alignment colors
+ */
+/*  all lawful alignment
+ */ 
+ #lawful{background-image:url(https://media.giphy.com/media/cd9VKoNb8evAe36TyU/giphy.gif);
+	background-size: contain;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+ }
+ /*  all neutral alignment
+ */ 
+ #neutral{background-image:url(https://media.giphy.com/media/8JQOy65wJXF4gwfizR/giphy.gif);
+	background-size: contain;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+ }
+ /*  all chaotic alignment
+ */ 
+ #chaotic{
+ background-image:url(https://thumbs.gfycat.com/WatchfulObeseBarasingha-size_restricted.gif);
+	background-size: contain;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+ }
+ 
+ #alignPic{
+ display:block;
+ 		margin:0 auto;
+ 		height:75%;
+ 		width: 35%;
+ 		border-radius: 25rem;
+ }
+ 
+ 
+ 
+ #lg {
 	color: #72dede;
 }
 
