@@ -14,7 +14,7 @@ public class HomeController {
 	@Autowired
 	private PersonDao personDao;
 
-	@RequestMapping(path = {"home"}, method = RequestMethod.GET)
+	@RequestMapping(path = {"/","home"}, method = RequestMethod.GET)
 	public String displayHome(ModelMap modelholder) {
 		modelholder.put("person", personDao.getAllPersons());
 		return "home";
