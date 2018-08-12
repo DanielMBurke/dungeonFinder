@@ -10,7 +10,7 @@
 	<c:url var="signup" value="/signup" />
 	<form method="GET" action="${signup}">
 	<label for="submit"></label> 
-	<input class="backButton  btn btn-danger btn-lg center-block" type="submit" value="Find out your alignmnet!" />
+	<input class="backButton  btn btn-danger btn-lg center-block" type="submit" value="Find out your alignment!" />
 	</form>
 </div>
 <div class="participantsTitle">

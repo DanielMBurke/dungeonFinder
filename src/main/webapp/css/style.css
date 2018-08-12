@@ -223,6 +223,127 @@ h3{
 	width: 50%;
 	justify-self: center;
 }
-/*  ;
-  */
+@media (max-width: 480px) { 
+#headerImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: 75%;
+}
+
+/* MOBILE HOMEPAGE */
+.headJar {
+	padding:3px;
+	background-color: #7b90a8;
+	border-radius: 25px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.signUp {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: 75%;
+	width: 40%;
+	text-align: center;
+}
+.signUp input{
+		font-size: 13px;
+}
+
+h1 {
+	color: black;
+	font: bold 30px 'Yatra One', cursive;
+	text-align: center;
+}
+
+h2 {
+	font: bold 40px 'Yatra One', cursive;
+	text-align: center;
+	background-image:url(https://thumbs.gfycat.com/WatchfulObeseBarasingha-size_restricted.gif);
+	background-size: contain;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+h3{
+	font: bold 70px 'Yatra One', cursive;
+	text-align: center;
+}
+
+.participantsTitle {
+	display: block;
+	font: bold 30px 'Yatra One', cursive;
+	color: black;
+	text-align: center;
+}
+
+#resultSet {
+	font-size:10px;
+	font-weight: bold; width : 95%;
+	margin: auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto-fill;
+	background-color: #7b90a8;
+	border-radius: 25px;
+	text-align: center;
+	width: 95%;
+}
+
+
+/* SIGN-UP MOBILE PAGE */	
+.form-Group {
+	width: 50%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+ 
+.shrink {
+	width: 50%;
+} 
+
+#strengthsJar {
+	font-size:10px;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin:auto;
+}
+
+#strengthsJar > div {
+	padding: 5px;
+	background-color: dimgrey;
+	font: 18px 'Yatra One', cursive;
+	border-radius: 5px;
+}
+/* RESULTS MOBILEPAGE
+ */
+.alignmentResult {
+	font: bold 70px 'Yatra One', cursive;
+	text-align: center;
+	background-image:
+		url(https://thumbs.gfycat.com/WatchfulObeseBarasingha-size_restricted.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 30px;
+	padding: auto;
+	margin: auto;
+	width: 80%;
+}
+
+.alignmentResult>button {
+	font: bold 40px 'Yatra One', cursive;
+	font-color: #000;
+	background-color: transparent;
+	border-color: transparent;
+	width: 50%;
+	justify-self: center;
+}
 }
